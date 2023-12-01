@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Submit">
+    
+    
+        <p>Rate our service:</p>
+        <input type="radio" id="excellent" name="rating" value="excellent" checked>
+        <label for="excellent">Excellent</label>
+    
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+    
+        <input type="radio" id="average" name="rating" value="average">
+        <label for="average">Average</label>
+    
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label>
+    
+        <input type="submit" value="Submit">
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea>
+    
+        <p>Select your interests:</p>
+        <input type="checkbox" id="music" name="interests[]" value="music">
+        <label for="music">Music</label>
+    
+        <input type="checkbox" id="sports" name="interests[]" value="sports">
+        <label for="sports">Sports</label>
+    
+        <input type="checkbox" id="movies" name="interests[]" value="movies">
+        <label for="movies">Movies</label>
+
+        
+    
+        <p>Select your country:</p>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">India</option>
+            <option value="uk">United Kingdom</option>
+        </select>
+    
+        <input type="submit" value="Submit">
+    </form>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Choose a file:</label>
+        <input type="file" id="file" name="file" accept=".jpg, .jpeg, .png" required>
+    
+        <input type="submit" value="Upload">
+    </form>
+            
+</body>
+</html>
